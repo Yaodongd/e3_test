@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OEC 测试任务看板</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p class="eyebrow">NON-PRODUCTION FIXTURE</p>
+        <h1>OEC 测试任务看板</h1>
+        <p>用于验证异步开发流程的只读样例项目。</p>
+      </header>
+
+      <section aria-labelledby="task-heading">
+        <div class="section-heading">
+          <h2 id="task-heading">需求列表</h2>
+          <span id="task-count" aria-live="polite">正在加载…</span>
+        </div>
+        <div id="task-list" class="task-list"></div>
+        <p id="error-message" class="error" hidden>任务加载失败，请刷新后重试。</p>
+      </section>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
+
